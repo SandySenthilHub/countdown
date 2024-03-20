@@ -1,0 +1,292 @@
+/* .container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 6%;
+    width: 100%;
+    z-index: 100;
+    height: 64px;
+ 
+}
+.newcontainer{
+   
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 6%;
+    width: 100%;
+    z-index: 100;
+    height: 80px;
+    background-color: #050505;
+    animation: fadeIn 1s ease-in both;
+} */
+
+
+
+.container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 6%;
+  width: 100%;
+  z-index: 100;
+  height: 64px;
+}
+
+.newcontainer {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 6%;
+  width: 100%;
+  z-index: 100;
+  height: 80px;
+  background-color: #050505;
+  animation: fadeIn 1s ease-in both;
+}
+
+/* Additional style for the logo */
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure the container spans the full width */
+  height: 100%;
+}
+
+.logo {
+  width: 1000px; /* Adjust the width as needed */
+  height: auto; /* Allow the height to adjust while maintaining aspect ratio */
+  max-height: 100%; /* Ensure the logo does not exceed its container's height */
+}
+
+/* @media screen and (max-width: 768px) {
+  .container,
+  .newcontainer {
+      height: 80px; 
+  }
+  .logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    max-height: 100%;
+    max-width: 100%;
+  }
+} */
+/* 
+@media screen and (min-width: 368px) and (max-width: 768px) {
+  .container {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 6%;
+    width: 100%;
+    z-index: 100;
+    height: 64px;
+  }
+  
+  .newcontainer {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 6%;
+    width: 100%;
+    z-index: 100;
+    height: 80px;
+    background-color: #050505;
+    animation: fadeIn 1s ease-in both;
+  }
+  
+  .logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    max-height: 100%;
+    max-width: 100%;
+  }
+} */
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.left{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.left>a>img{
+    /* margin-left: -6%; */
+    margin-left: -25%;
+    /* margin-top: 1rem; */
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+      width: 50%;
+}
+.center{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  max-width: 2500px; 
+  margin: 0 auto; 
+  padding: 20px;
+
+}
+.registermainbtn{
+    border-radius: 6px;
+background: linear-gradient(0deg, #007AFF -0.1%, #004289 46.1%, #001934 100%), #FFF;
+background-size: 300%;
+display: flex;
+padding: 10px 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+border: none;
+color: #E0E0E0;
+font-family: K2D;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.96px;
+text-transform: uppercase;
+position: relative;
+cursor: pointer;
+/* z-index: 1; */
+}
+.registermainbtn:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  
+  .registermainbtn2{
+    display: inline-flex;
+    padding: 10px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid #999;
+    color: #999;
+    font-family: K2D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+/* z-index: 1; */
+}
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+
+.registermainbtn:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    right: 6px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#250681,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 6px;
+    transition: 1s;
+    height: 37px;
+  }
+  .registermainbtn:hover::before {
+    filter: blur(20px);
+  }
+  .registermainbtn2:hover{
+    cursor: pointer;
+    color: rgb(36, 88, 132);
+    border: 1px solid  rgb(36, 88, 132);
+  }
+
+  
+@media screen and (max-width:768px){
+  /* .container,
+  .newcontainer {
+      height: 80px; 
+  }
+  .logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    max-height: 100%;
+    max-width: 100%;
+  } */
+    .registermainbtn{
+        display: flex;
+height: 28px;
+padding: 0px 14px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #E0E0E0;
+font-size: 10px;
+letter-spacing: 0.84px;
+
+    }
+    .registermainbtn:before {
+        height: 24px;
+    }
+    .registermainbtn2{
+      height: 28px;
+      padding: 0px 14px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      flex-shrink: 0;
+      font-size: 10px;
+      letter-spacing: 0.84px;
+
+  }
+ 
+    .left>a>img{
+        /* height: 64px;
+        width: 104px; */
+        height: 28px;
+        width: 85px;
+    }
+    }

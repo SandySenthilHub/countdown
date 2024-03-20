@@ -1,0 +1,81 @@
+/* Counter.css */
+.counter {
+  position: relative;
+}
+
+.count {
+  font-size: 124px;
+  color:#b7bcd7;
+  transition: all 0.5s ease-in-out;
+  /* margin-top: 5%; */
+ 
+}
+
+.count.animate {
+  animation: animateCount 0.5s ease-in-out;
+
+}
+
+@keyframes animateCount {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+    background-image: url(../../assets/Coming-soon-new.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat: none;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrap{
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8rem;
+  padding-bottom: 8%;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+@media screen and (max-width:768px){
+  .container{
+    background-image: url(../../assets/mbl-Coming-soon-new.png);
+
+}
+  .wrap{
+      padding-bottom: 2.8rem;
+      padding-top: 7rem;
+     
+  }
+  .count {
+    margin-top: 30%;
+    font-size: 64px;
+    color:#b7bcd7;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+}
+
+
+
+

@@ -1,0 +1,135 @@
+.container{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1% 6%;
+    z-index: 100;
+
+}
+/* .homefooter{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1% 6%;
+    z-index: 100;
+
+} */
+.wrap{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+  
+}
+
+.wrap img{
+    margin: 0 5px;
+}
+.left>:nth-child(1){
+    color: white;
+font-family: K2D;
+font-size: 14px;
+font-style: normal;
+font-weight: 275;
+line-height: normal;
+letter-spacing: 0.96px;
+text-transform: uppercase;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* .middle{
+    background: linear-gradient(0deg, rgba(0, 122, 255, 0.90) -0.1%, rgba(0, 66, 137, 0.90) 46.1%, rgba(0, 25, 52, 0.90) 100%);
+filter: blur(90.27738189697266px);
+width: 336.273px;
+height: 221.634px;
+flex-shrink: 0;
+} */
+.tooltipcontainer{
+    position: relative;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+    /* height: 17px; */
+}
+.tooltip {
+    position: absolute;
+    /* top: 0; */
+    top: -25px;
+    right: -44px;
+    font-size: 12px;
+    font-family: K2D;
+    background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));
+    color: #fff;
+    padding: 16px 0px;
+    width: 113px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));
+   
+    bottom: -3px;
+    right: -23px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .tooltipcontainer:hover .tooltip {
+    top: -55px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .container{
+        position: absolute;
+        background-color: #050505;
+        bottom: auto;
+        /* padding: 4% 6%; */
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .homefooter{
+        position: absolute;
+        background-color: #050505;
+        bottom: auto;
+        padding: 4% 6%;
+
+    } */
+    .left>:nth-child(1){
+        font-size: 13px;
+        letter-spacing: 0.84px;
+    }
+    .right>:nth-child(1), .right>:nth-child(3){
+        width: 20px;
+        height: 20px;
+    }
+    .right>:nth-child(2){
+        width: 17px;
+        height: 17px;
+       
+    }
+    .tooltipcontainer{
+        height: 17px;
+    }
+}
